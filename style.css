@@ -1,0 +1,144 @@
+:root {
+    --clr-primary: hsl(75, 94%, 57%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey: hsl(0, 0%, 20%);
+    --clr-dark-grey: hsl(0, 0%, 12%);
+    --clr-black: hsl(0, 0%, 8%);   
+
+}
+
+@media (max-width: 768px) {
+    .social__card {
+      width: 90%;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+  
+    .social__card--img {
+      width: 40%;
+    }
+  
+    .heading--1 {
+      font-size: 2rem;
+    }
+  
+    .heading--2 {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .btn {
+      padding: 0.8rem;
+      font-size: 0.9rem;
+      margin-bottom: 0.4rem;
+      margin-top: 0.8rem;
+    }
+  
+    .attribution {
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 375px) {
+
+    .social__card {
+        margin: 2rem;
+    }
+    .social__card--img {
+      width: 50%;
+
+}
+  }
+
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-black);
+
+}
+
+.social__card {
+    margin-top: 2rem;
+    width: 30rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--clr-dark-grey);
+    font-family: "Inter", sans-serif;
+    border-radius: 1.5rem;
+}
+
+.social__card--img {
+    border-radius: 50%;
+    width: 30%;
+    padding: 0.5rem;
+}
+
+
+
+.heading--1 {
+    color: var(--clr-white);
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.heading--2 {
+    color: var(--clr-primary);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social__card--bio {
+    font-weight: 300;
+    color: var(--clr-white);
+    margin-bottom: 1rem;
+}
+
+.button__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    background-color: var(--clr-grey);
+    border: none;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    color: var(--clr-white);
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-black);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+
+.attribution {
+    margin-top: 2.5rem;
+    color: var(--clr-white);
+    font-size: 1.2rem;
+
+}
+
+.attribution a {
+    color: var(--clr-primary);
+    text-decoration: none;
+    font-weight: 300;
+}
