@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop view](design/desktop-view)
-[Mobile view](design/mobile-view)
+[Desktop view](./design/desktop-view.png)
+[Mobile view](./design/mobile-view)
 
 
 ### Links
