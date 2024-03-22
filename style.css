@@ -7,48 +7,28 @@
 
 }
 
-@media (max-width: 768px) {
-    .social__card {
-      width: 90%;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-  
-    .social__card--img {
-      width: 40%;
-    }
-  
-    .heading--1 {
-      font-size: 2rem;
-    }
-  
-    .heading--2 {
-      font-size: 0.9rem;
-      margin-bottom: 1.5rem;
-    }
-  
-    .btn {
-      padding: 0.8rem;
-      font-size: 0.9rem;
-      margin-bottom: 0.4rem;
-      margin-top: 0.8rem;
-    }
-  
-    .attribution {
-      margin-top: 2rem;
-    }
-  }
-  
-  @media (max-width: 375px) {
 
-    .social__card {
-        margin: 2rem;
+  
+@media (max-width: 500px) {
+    html {
+        font-size: 90%;
     }
-    .social__card--img {
-      width: 50%;
-
 }
-  }
+
+
+@media (max-width: 300px){
+    html {
+        font-size: 75%;
+    }
+
+    .wrapper {
+        padding: 0.5rem;
+    }
+
+  
+}
+
+
 
   
 * {
@@ -69,26 +49,40 @@ body {
 
 .social__card {
     margin-top: 2rem;
-    width: 30rem;
     text-align: center;
-    padding: 2rem;
     background-color: var(--clr-dark-grey);
     font-family: "Inter", sans-serif;
     border-radius: 1.5rem;
+
+
+
 }
+
+.wrapper {
+    padding:2rem;
+   
+ }
 
 .social__card--img {
     border-radius: 50%;
-    width: 30%;
+    width: 50%;
     padding: 0.5rem;
 }
+
+.social__card--img:hover {
+    transform: translateY(-1rem);
+    transition: ease-in .5s;
+    cursor: pointer;
+}
+
+
 
 
 
 .heading--1 {
     color: var(--clr-white);
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -130,11 +124,19 @@ body {
 }
 
 
+
+
 .attribution {
     margin-top: 2.5rem;
     color: var(--clr-white);
     font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 
+    @media (max-width:350px){
+        font-size: 1rem;
+    }
+
+ 
 }
 
 .attribution a {
